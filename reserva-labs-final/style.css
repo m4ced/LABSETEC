@@ -1,0 +1,199 @@
+:root {
+    --bg-main: #090305;
+    --bg-secondary: #110608;
+    --bg-card: #15080b;
+    --bg-card-header: #1c0a0e;
+    --border-color: #2e1015;
+    --border-red: #dc2626;
+    --border-red-light: rgba(220, 38, 38, 0.4);
+    --red-primary: #dc2626;
+    --red-hover: #ef4444;
+    --red-dark: #991b1b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --green-status: #16a34a;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-custom {
+    background-color: #0d0406;
+    border-bottom: 2px solid var(--red-primary);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #f8fafc !important;
+}
+
+.brand-etec {
+    color: var(--red-primary);
+    font-weight: 900;
+}
+
+.nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 600;
+    padding: 0.5rem 1rem !important;
+    border-radius: 6px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffffff !important;
+    background-color: rgba(220, 38, 38, 0.25);
+}
+
+.card-custom {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-main);
+}
+
+.card-custom:hover {
+    box-shadow: none !important;
+}
+
+.card-ocupado {
+    border-left: 5px solid var(--red-primary) !important;
+    border-color: rgba(220, 38, 38, 0.4);
+    background-color: #1a070a;
+}
+
+.card-livre {
+    border-left: 5px solid var(--green-status) !important;
+    border-color: rgba(22, 163, 74, 0.4);
+    background-color: #06170d;
+}
+
+.card-custom-header {
+    background-color: var(--bg-card-header);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.85rem 1.15rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.btn-red {
+    background-color: var(--red-primary);
+    color: #ffffff;
+    font-weight: 600;
+    border: 1px solid var(--red-primary);
+    border-radius: 6px;
+    padding: 0.55rem 1.1rem;
+    transition: background-color 0.15s ease;
+}
+
+.btn-red:hover {
+    background-color: var(--red-hover);
+    color: #ffffff;
+    box-shadow: none !important;
+}
+
+.btn-outline-red {
+    color: var(--red-hover);
+    border: 1px solid var(--red-primary);
+    background-color: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}
+
+.btn-outline-red:hover {
+    background-color: var(--red-primary);
+    color: #ffffff;
+    box-shadow: none !important;
+}
+
+.badge-ocupado {
+    background-color: rgba(220, 38, 38, 0.2);
+    color: #fca5a5;
+    border: 1px solid rgba(220, 38, 38, 0.5);
+    font-weight: 700;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+}
+
+.badge-livre {
+    background-color: rgba(22, 163, 74, 0.2);
+    color: #86efac;
+    border: 1px solid rgba(22, 163, 74, 0.5);
+    font-weight: 700;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+}
+
+.table-custom {
+    color: var(--text-main);
+    background-color: var(--bg-card);
+}
+
+.table-custom th {
+    background-color: var(--bg-card-header);
+    color: #fca5a5;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border-color);
+    padding: 0.75rem 1rem;
+}
+
+.table-custom td {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+}
+
+.table-custom tr:hover td {
+    background-color: #200c11;
+}
+
+.form-control, .form-select {
+    background-color: #0c0406;
+    border: 1px solid var(--border-color);
+    color: #f8fafc;
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #120609;
+    border-color: var(--red-primary);
+    color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(220, 38, 38, 0.25);
+}
+
+.form-label {
+    color: #f1f5f9;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+
+.schedule-info-box {
+    background-color: var(--bg-card);
+    border-left: 4px solid var(--red-primary);
+    border-top: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.85rem 1.15rem;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #0d0406;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
