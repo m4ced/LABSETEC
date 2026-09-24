@@ -1,8 +1,8 @@
 <?php
-$host    = "localhost";
+$host    = "127.0.0.1";
 $banco   = "laboratorio";
-$usuario = "root";
-$senha   = "";
+$usuario = "etec";
+$senha   = "123456";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$banco;charset=utf8mb4", $usuario, $senha, [
@@ -15,3 +15,5 @@ try {
     $erro_conexao = "Não foi possível conectar ao MySQL ($banco). Detalhes: " . $e->getMessage();
 }
 ?>
+
+
